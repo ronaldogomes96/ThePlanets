@@ -20,10 +20,6 @@ public class PlanetsCollectionViewController: UIViewController {
         }
     }
     
-//    if !(Planet.filter { $0 == element }).isEmpty {
-//        choisePlanets.append(index)
-//    }
-    
     var choisePlanets: [Int] = []
     
     lazy var collection: UICollectionView = {
@@ -74,7 +70,7 @@ extension PlanetsCollectionViewController: UICollectionViewDelegate, UICollectio
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "customCell", for: indexPath) as! PlanetsCollectionCell
         cell.planetDescription = planets.planetsPages[choisePlanets[indexPath.row]][5]
         cell.planetCuriosities = "Day: \(planets.planetsPages[choisePlanets[indexPath.row]][6])\nYear: \(planets.planetsPages[choisePlanets[indexPath.row]][7])\nMoons: \(planets.planetsPages[choisePlanets[indexPath.row]][8])"
-        cell.index = choisePlanets[indexPath.row]
+        cell.planetImage = UIImage(named: planets.planetsPages[choisePlanets[indexPath.row]][0])
         
         return cell
     }

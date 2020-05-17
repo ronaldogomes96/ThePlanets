@@ -7,7 +7,6 @@ spaceship.travelTour = ["Earth", "Jupiter", "Uranus","Mercury","Mars"]
  
 It is important to write in this order and manner, as your spaceship only understands the coordinates in this way !!.
  - note:
- -> Swipe sideways to see messages from the planets
  -> When you are finished with observations on a planet, move to the side to go to the next
  ---
 Write the name of the planets inside the keys and run the code. You will see a page for each chosen planet
@@ -15,7 +14,7 @@ Write the name of the planets inside the keys and run the code. You will see a p
 */
 import PlaygroundSupport
 var spaceship = PlanetsCollectionViewController()
-spaceship.travelTour = [ ] // Write the planets in these keys 
+spaceship.travelTour = [ ] // Write the planets in these keys
 PlaygroundPage.current.liveView = spaceship
 /*:
 Wow, what an incredible trip, your crew member Joel Levi was very happy. At this moment you left him on his home planet, but he promised to return one day and take him to know beyond the solar system ...

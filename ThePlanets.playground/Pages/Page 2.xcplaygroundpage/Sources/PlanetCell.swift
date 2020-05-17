@@ -60,7 +60,6 @@ public class PlanetCell: UICollectionViewCell {
     
     func setupPlanetDescription() {
         
-        //Todos os elementos devem ser adicionados ao content view da scroll
         self.addSubview(descriptionPlanet)
         
         descriptionPlanet.translatesAutoresizingMaskIntoConstraints = false
